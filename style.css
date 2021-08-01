@@ -1,0 +1,56 @@
+body {
+    background-color: rgba(95, 95, 95, 0.39);
+}
+#window {
+    width: 400px;
+    height: 400px;
+    margin:0 auto; 
+    border: 1px solid black;
+    overflow: hidden;
+}
+#top {
+    border: 1px solid;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#carousel {
+    display: flex;
+    animation: oscillate 20s infinite;
+    animation-direction: alternate-reverse;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+#lead   {
+    height: 400px;
+    width: 400px;
+}
+#slider {
+    display: flex;
+}
+
+#container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -150%;
+    height: 125%;
+}
+
+@keyframes oscillate {
+    0%, 15% {
+      transform: translateX(0px);
+    }
+    16%, 33% {
+      transform: translateX(-400px);
+    }
+    34%, 66% {
+      transform: translateX(-800px);
+    }
+    67%, 100% {
+      transform: translateX(0px);
+    }
+}
